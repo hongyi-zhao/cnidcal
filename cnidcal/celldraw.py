@@ -79,6 +79,8 @@ class cellsdrawer:
         self.CSL = CSL  # 2-D CSL (direct)
         self.CSL_R = search_CSL(self.PB_1_R, self.PB_2_R, lim) # 2-D CSL (reciprocal)
         self.CNID = CNID # CNID
+        # 初始化CNID_screen属性
+        self.CNID_screen = None  # 或使用适当的默认值
         
     def draw_direct(self, xlow, xhigh, ylow, yhigh, figsize_x, figsize_y, show_CSL = True, \
     show_CNID_points = False, show_CNID_cell = False, show_lattice_1 = True, show_lattice_2 = True, size_LP_1 = 150, \
